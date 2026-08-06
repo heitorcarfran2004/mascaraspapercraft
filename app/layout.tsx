@@ -61,6 +61,10 @@ export default function RootLayout({
           {`
             (function () {
               var url = "${backRedirectUrl}";
+              // Não arma o redirect na própria página de oferta (evita loop).
+              var guardPath;
+              try { guardPath = new URL(url, location.origin).pathname; } catch (e) { guardPath = url; }
+              if (guardPath && location.pathname.indexOf(guardPath) === 0) return;
               var target = url.trim() + (url.indexOf('?') > 0 ? '&' : '?') + document.location.search.replace('?', '');
               history.pushState({}, '', location.href);
               history.pushState({}, '', location.href);

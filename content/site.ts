@@ -18,7 +18,24 @@ export const checkout = {
 } as const;
 
 /** Para onde o navegador volta ao apertar "voltar" (back-redirect). */
-export const backRedirectUrl = "https://mascaraspaperback.vercel.app/";
+export const backRedirectUrl = "https://mascaraspapercraft.vercel.app/promo";
+
+/* ------------------------------------------------------------------ */
+/* Oferta de saída (página de back-redirect /promo)                    */
+/* ------------------------------------------------------------------ */
+
+export const backOffer = {
+  banner: "ATENÇÃO: NÃO FECHE ESSA PÁGINA OU PERDERÁ O DESCONTO",
+  badge: "OFERTA EXCLUSIVA",
+  title: "Espera! Não vá embora ainda",
+  subtitle:
+    "Antes de sair, liberamos uma oferta única do nosso pacote completo com desconto exclusivo. Mas é só agora!",
+  originalPrice: "De R$ 15,90",
+  price: "R$ 6,90",
+  savings: "Economize R$ 9,00",
+  /** Checkout dedicado à oferta de saída. */
+  checkout: "https://checkout.safepaysec.shop/VCCL1O8SCOFH",
+} as const;
 
 /** Pixel da UTMify usado no rastreamento de conversão. */
 export const utmifyPixelId = "69db37c122a31821d842a567";
