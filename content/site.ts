@@ -10,11 +10,11 @@
 
 export const checkout = {
   /** Plano completo "Coleção Mestre" (CTA principal). */
-  master: "https://ggcheckout.app/checkout/v5/oCtE74KEwFtvHEiWxULY",
+  master: "https://checkout.safepaysec.shop/VCCL1O8SCQ6H",
   /** Upsell oferecido quando o usuário clica no plano básico. */
-  upsell: "https://ggcheckout.app/checkout/v5/fo1NxX1ks8T6qBXtTvHy",
+  upsell: "https://checkout.safepaysec.shop/VCCL1O8SCQ6I",
   /** Plano básico (quando o usuário recusa o upsell). */
-  basic: "https://ggcheckout.app/checkout/v5/q2Z6itwEAb0nHVyVlykm",
+  basic: "https://checkout.safepaysec.shop/VCCL1O8SCQ6J",
 } as const;
 
 /** Para onde o navegador volta ao apertar "voltar" (back-redirect). */
