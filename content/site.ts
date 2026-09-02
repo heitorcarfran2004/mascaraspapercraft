@@ -10,11 +10,11 @@
 
 export const checkout = {
   /** Plano completo "Coleção Mestre" (CTA principal). */
-  master: "https://checkout.safepaysec.shop/VCCL1O8SCQ6H",
+  master: "https://ggcheckout.app/checkout/v5/oCtE74KEwFtvHEiWxULY",
   /** Upsell oferecido quando o usuário clica no plano básico. */
-  upsell: "https://checkout.safepaysec.shop/VCCL1O8SCQ6I",
+  upsell: "https://ggcheckout.app/checkout/v5/YT03lf8KgINPHLNUvlnR",
   /** Plano básico (quando o usuário recusa o upsell). */
-  basic: "https://checkout.safepaysec.shop/VCCL1O8SCQ6J",
+  basic: "https://ggcheckout.app/checkout/v5/q2odJcyO8noqKuO5T1I9",
 } as const;
 
 /** Para onde o navegador volta ao apertar "voltar" (back-redirect). */
@@ -34,7 +34,7 @@ export const backOffer = {
   price: "R$ 6,90",
   savings: "Economize R$ 9,00",
   /** Checkout dedicado à oferta de saída. */
-  checkout: "https://checkout.safepaysec.shop/VCCL1O8SCOFH",
+  checkout: "https://ggcheckout.app/checkout/v5/GtGzjOP3zZTNbYyNY85A",
 } as const;
 
 /** Pixel da UTMify usado no rastreamento de conversão. */
